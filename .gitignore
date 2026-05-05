@@ -1,0 +1,24 @@
+# Build output
+target/
+*.class
+*.jar
+
+# Local ModTheSpire / Steam uploader output
+sendToDevs/
+steam_appid.txt
+*.log
+
+# Local editor and agent state
+.DS_Store
+.idea/
+.vscode/
+.claude/
+.tools/
+*.swp
+*.swo
+
+# OS and archive clutter
+Thumbs.db
+*.zip
+*.tar
+*.tar.gz

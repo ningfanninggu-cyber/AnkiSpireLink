@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ankispire</groupId>
+    <artifactId>AnkiSpireLink</artifactId>
+    <version>0.1.0</version>
+    <packaging>jar</packaging>
+
+    <name>AnkiSpireLink</name>
+    <description>Link Slay the Spire card plays with AnkiConnect reviews.</description>
+
+    <properties>
+        <java.release>8</java.release>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <Steam.path>${env.STEAMAPPS}</Steam.path>
+        <SlayTheSpire.jar.path>${Steam.path}/common/SlayTheSpire/desktop-1.0.jar</SlayTheSpire.jar.path>
+        <SlayTheSpire.mods.path>${Steam.path}/common/SlayTheSpire/mods</SlayTheSpire.mods.path>
+        <ModTheSpire.version>3.30.0</ModTheSpire.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.megacrit.cardcrawl</groupId>
+            <artifactId>slaythespire</artifactId>
+            <version>12-18-2022</version>
+            <scope>system</scope>
+            <systemPath>${SlayTheSpire.jar.path}</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>modthespire</artifactId>
+            <version>${ModTheSpire.version}</version>
+            <scope>system</scope>
+            <systemPath>${Steam.path}/workshop/content/646570/1605060445/ModTheSpire.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>basemod</groupId>
+            <artifactId>basemod</artifactId>
+            <version>5.21.1</version>
+            <scope>system</scope>
+            <systemPath>${Steam.path}/workshop/content/646570/1605833019/BaseMod.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.13.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.13.4</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>AnkiSpireLink</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.15.0</version>
+                <configuration>
+                    <release>${java.release}</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <mkdir dir="${SlayTheSpire.mods.path}"/>
+                                <copy file="target/${project.artifactId}.jar"
+                                      tofile="${SlayTheSpire.mods.path}/${project.artifactId}.jar"/>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>macos-steam-default</id>
+            <activation>
+                <os>
+                    <family>mac</family>
+                </os>
+                <property>
+                    <name>!env.STEAMAPPS</name>
+                </property>
+            </activation>
+            <properties>
+                <Steam.path>${user.home}/Library/Application Support/Steam/steamapps</Steam.path>
+                <SlayTheSpire.jar.path>${Steam.path}/common/SlayTheSpire/SlayTheSpire.app/Contents/Resources/desktop-1.0.jar</SlayTheSpire.jar.path>
+                <SlayTheSpire.mods.path>${Steam.path}/common/SlayTheSpire/SlayTheSpire.app/Contents/Resources/mods</SlayTheSpire.mods.path>
+            </properties>
+        </profile>
+        <profile>
+            <id>windows-steam-default</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+                <property>
+                    <name>!env.STEAMAPPS</name>
+                </property>
+            </activation>
+            <properties>
+                <Steam.path>C:/Program Files (x86)/Steam/steamapps</Steam.path>
+            </properties>
+        </profile>
+    </profiles>
+</project>

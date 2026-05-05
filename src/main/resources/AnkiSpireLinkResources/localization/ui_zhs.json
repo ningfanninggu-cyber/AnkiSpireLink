@@ -1,0 +1,55 @@
+{
+  "AnkiSpireLink:ReviewScreen": {
+    "TEXT": [
+      "Anki 复习",
+      "已连接到 Anki，并尝试进入牌组：",
+      "请在 Anki 原软件中完成当前复习卡。你的评分会决定这张牌的加成。",
+      "请在 Anki 原软件中打开你想复习的牌组，并完成一张复习卡。",
+      "没有检测到 Anki 正在复习卡片。请确认 Anki 已打开、AnkiConnect 已启用，并已经进入复习界面。",
+      "本牌不会结算，直到你在 Anki 中完成一张复习卡。",
+      "游戏正在等待真实 Anki 里的答案。",
+      "重试 / 打开 Anki",
+      "正在打开 Anki...",
+      "正在打开 Anki 牌组：",
+      "请在 Anki 中开始复习...",
+      "请回答 Anki 当前卡片：",
+      "Anki 复习完成。",
+      "Anki 复习失败：",
+      "正在启动 Anki 复习...",
+      "正在等待 AnkiConnect；不会自动切换软件焦点...",
+      "重试"
+    ]
+  },
+  "AnkiSpireLink:StartChoiceScreen": {
+    "TEXT": [
+      "Anki 联动",
+      "本局是否启用 Anki 联动？ NL 启用后，打出非状态牌会等待你在 Anki 原软件中完成一张复习卡，然后按评分结算加成。 NL 不启用则本局完全不拦牌、不触发 Anki。",
+      "本局使用",
+      "本局不用"
+    ]
+  },
+  "AnkiSpireLink:RewardMessages": {
+    "TEXT": [
+      "Anki：重来。慢慢来：最大生命 +1。",
+      "Anki：困难。灵光一闪：获得 1 能量和 3 格挡。",
+      "Anki：良好。记忆回响：本牌 x2，抽 1 张，临时力量 +1。",
+      "Anki：简单。灵感爆发：本牌 x4，获得 1 能量，抽 1 张，临时力量和敏捷 +1。"
+    ]
+  },
+  "AnkiSpireLink:RandomRewardMessages": {
+    "TEXT": [
+      "额外奖励：最大生命 +{maxHp}。",
+      "额外奖励：回复 {heal} 点生命。",
+      "额外奖励：获得 {gold} 金币。",
+      "额外奖励：获得一件随机遗物。"
+    ]
+  },
+  "AnkiSpireLink:ConfigPanel": {
+    "TEXT": [
+      "Anki 牌组名",
+      "填写则让 AnkiConnect 自动进入该牌组复习；留空则由你在 Anki 中手动选择牌组。",
+      "自动切换到 Anki",
+      "关闭后适合手动分屏：mod 只显示等待面板并后台轮询，不再切到 Anki 或切回游戏。"
+    ]
+  }
+}

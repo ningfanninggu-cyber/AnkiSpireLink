@@ -1,0 +1,55 @@
+{
+  "AnkiSpireLink:ReviewScreen": {
+    "TEXT": [
+      "Anki 複習",
+      "已連接到 Anki，並嘗試進入牌組：",
+      "請在 Anki 原軟體中完成目前複習卡。你的評分會決定這張牌的加成。",
+      "請在 Anki 原軟體中打開你想複習的牌組，並完成一張複習卡。",
+      "沒有偵測到 Anki 正在複習卡片。請確認 Anki 已打開、AnkiConnect 已啟用，並已經進入複習介面。",
+      "本牌不會結算，直到你在 Anki 中完成一張複習卡。",
+      "遊戲正在等待真實 Anki 裡的答案。",
+      "重試 / 打開 Anki",
+      "正在打開 Anki...",
+      "正在打開 Anki 牌組：",
+      "請在 Anki 中開始複習...",
+      "請回答 Anki 目前卡片：",
+      "Anki 複習完成。",
+      "Anki 複習失敗：",
+      "正在啟動 Anki 複習...",
+      "正在等待 AnkiConnect；不會自動切換軟體焦點...",
+      "重試"
+    ]
+  },
+  "AnkiSpireLink:StartChoiceScreen": {
+    "TEXT": [
+      "Anki 聯動",
+      "本局是否啟用 Anki 聯動？ NL 啟用後，打出非狀態牌會等待你在 Anki 原軟體中完成一張複習卡，然後按評分結算加成。 NL 不啟用則本局完全不攔牌、不觸發 Anki。",
+      "本局使用",
+      "本局不用"
+    ]
+  },
+  "AnkiSpireLink:RewardMessages": {
+    "TEXT": [
+      "Anki：重來。慢慢來：最大生命 +1。",
+      "Anki：困難。靈光一閃：獲得 1 能量和 3 格擋。",
+      "Anki：良好。記憶回響：本牌 x2，抽 1 張，臨時力量 +1。",
+      "Anki：簡單。靈感爆發：本牌 x4，獲得 1 能量，抽 1 張，臨時力量和敏捷 +1。"
+    ]
+  },
+  "AnkiSpireLink:RandomRewardMessages": {
+    "TEXT": [
+      "額外獎勵：最大生命 +{maxHp}。",
+      "額外獎勵：回復 {heal} 點生命。",
+      "額外獎勵：獲得 {gold} 金幣。",
+      "額外獎勵：獲得一件隨機遺物。"
+    ]
+  },
+  "AnkiSpireLink:ConfigPanel": {
+    "TEXT": [
+      "Anki 牌組名",
+      "填寫則讓 AnkiConnect 自動進入該牌組複習；留空則由你在 Anki 中手動選擇牌組。",
+      "自動切換到 Anki",
+      "關閉後適合手動分屏：mod 只顯示等待面板並背景輪詢，不再切到 Anki 或切回遊戲。"
+    ]
+  }
+}

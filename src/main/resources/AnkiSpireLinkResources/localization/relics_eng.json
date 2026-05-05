@@ -1,0 +1,11 @@
+{
+  "AnkiSpireLink:AnkiLinkRelic": {
+    "NAME": "Anki Link",
+    "FLAVOR": "A tiny bridge between memory and violence.",
+    "DESCRIPTIONS": [
+      "Before you play a non-status card, switch to the real Anki app and complete one review, with a chance for a random extra reward. NL #rAgain : max HP #b+1 . NL #yHard : gain #b1 Energy and #b3 Block. NL #bGood : this card's values become #b2x , draw #b1 card, and gain #b1 temporary Strength. NL #gEasy : this card's values become #g4x , gain #b1 Energy, draw #b1 card, and gain #b1 temporary Strength and #b1 temporary Dexterity.",
+      "No Anki review was detected. This card will keep waiting.",
+      "Anki rating recorded; the in-game bonus was applied."
+    ]
+  }
+}

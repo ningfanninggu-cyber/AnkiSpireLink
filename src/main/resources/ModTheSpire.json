@@ -1,0 +1,11 @@
+{
+  "modid": "AnkiSpireLink",
+  "name": "Anki Spire Link",
+  "author_list": ["a17", "Codex"],
+  "description": "Review Anki cards through AnkiConnect before playing cards in Slay the Spire, then receive card multipliers based on Again/Hard/Good/Easy.",
+  "version": "0.1.0",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.30.0",
+  "dependencies": ["basemod"],
+  "update_json": ""
+}

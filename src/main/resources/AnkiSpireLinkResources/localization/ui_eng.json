@@ -1,0 +1,55 @@
+{
+  "AnkiSpireLink:ReviewScreen": {
+    "TEXT": [
+      "Anki Review",
+      "Anki review started for deck: ",
+      "Finish the current review card in the real Anki app. Your rating will decide this card's bonus.",
+      "Start reviewing your chosen deck in Anki, then answer one card there.",
+      "No active Anki review card was detected. Make sure Anki is open, AnkiConnect is enabled, and Anki is in review mode.",
+      "This card will not resolve until you complete one Anki review.",
+      "The game is waiting for your answer in the real Anki app.",
+      "Retry / Open Anki",
+      "Opening Anki...",
+      "Starting Anki deck review: ",
+      "Waiting for you to start a review in Anki...",
+      "Answer the current card in Anki: ",
+      "Anki review complete.",
+      "Anki review failed: ",
+      "Starting Anki review...",
+      "Waiting for AnkiConnect without switching app focus...",
+      "Retry"
+    ]
+  },
+  "AnkiSpireLink:StartChoiceScreen": {
+    "TEXT": [
+      "Anki Link",
+      "Use Anki Spire Link for this run? NL If enabled, non-status cards wait for one review in the real Anki app, then resolve with a bonus based on your rating. NL If disabled, this run will not interrupt card plays or use Anki.",
+      "Use this run",
+      "Not this run"
+    ]
+  },
+  "AnkiSpireLink:RewardMessages": {
+    "TEXT": [
+      "Anki: Again. Slow and steady: max HP +1.",
+      "Anki: Hard. Spark of focus: gain 1 Energy and 3 Block.",
+      "Anki: Good. Memory echo: this card x2, draw 1, temporary Strength +1.",
+      "Anki: Easy. Burst of insight: this card x4, gain 1 Energy, draw 1, temporary Strength and Dexterity +1."
+    ]
+  },
+  "AnkiSpireLink:RandomRewardMessages": {
+    "TEXT": [
+      "Bonus: max HP +{maxHp}.",
+      "Bonus: heal {heal} HP.",
+      "Bonus: gain {gold} gold.",
+      "Bonus: gain a random relic."
+    ]
+  },
+  "AnkiSpireLink:ConfigPanel": {
+    "TEXT": [
+      "Anki deck name",
+      "Set a deck to start that review queue automatically; leave empty to choose a deck manually in Anki.",
+      "Switch focus to Anki",
+      "Turn off for manual split-screen: the mod keeps waiting and polling without app focus changes."
+    ]
+  }
+}
